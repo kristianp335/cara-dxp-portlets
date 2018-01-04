@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.liferay.unilever.demo.cara.service.impl.projectLocalServiceImpl" id="com.liferay.unilever.demo.cara.service.projectLocalService" />
+	<bean class="com.liferay.unilever.demo.cara.service.impl.projectServiceImpl" id="com.liferay.unilever.demo.cara.service.projectService" />
+	<bean class="com.liferay.unilever.demo.cara.service.persistence.impl.projectPersistenceImpl" id="com.liferay.unilever.demo.cara.service.persistence.projectPersistence" parent="basePersistence" />
+</beans>

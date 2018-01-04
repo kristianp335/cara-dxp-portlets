@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.unilever.demo.cara.join.model.Join">
+		<field name="jobId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="projectId" type="long" />
+		<field name="jobType" type="String" />
+		<field name="variant" type="String" />
+		<field name="format" type="String" />
+		<field name="visualDesign" type="Boolean" />
+		<field name="visualDesignCu" type="Boolean" />
+		<field name="noticableConsumers" type="Boolean" />
+		<field name="changePackaging" type="Boolean" />
+		<field name="changeFormulation" type="Boolean" />
+		<field name="visualDesignComplete" type="Date" />
+		<field name="artworkApproved" type="Date" />
+		<field name="separationFilesToPrinter" type="Date" />
+		<field name="marketDeployment" type="Date" />
+		<field name="shipToTrade" type="Date" />
+		<field name="designAgency" type="long" />
+		<field name="pmaUser" type="long" />
+		<field name="localMarketing" type="long" />
+		<field name="rndLocalDeployUser" type="long" />
+		<field name="projectName" type="String" />
+		<field name="projectCategory" type="String" />
+		<field name="projectType" type="String" />
+		<field name="brand" type="String" />
+		<field name="projectUserId" type="long" />
+	</model>
+</model-hints>

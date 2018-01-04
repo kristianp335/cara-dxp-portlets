@@ -1,0 +1,9 @@
+Bundle-Name: cara-join-api
+Bundle-SymbolicName: com.liferay.unilever.demo.cara.join.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.unilever.demo.cara.join.exception,\
+	com.liferay.unilever.demo.cara.join.model,\
+	com.liferay.unilever.demo.cara.join.service,\
+	com.liferay.unilever.demo.cara.join.service.persistence
+-includeresource: META-INF/service.xml=../cara-join-service/service.xml

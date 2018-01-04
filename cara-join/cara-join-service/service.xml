@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.liferay.unilever.demo.cara.join">
+	<namespace>cara</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Join" remote-service="true" cache-enabled="false">
+
+		<!-- PK fields -->
+
+		<column name="jobId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="projectId" type="long" />
+		<column name="jobType" type="String" />
+		<column name="variant" type="String" />
+		<column name="format" type="String" />
+		
+		<column name="visualDesign" type="Boolean" />
+		<column name="visualDesignCu" type="Boolean" />
+		
+		<column name="noticableConsumers" type="Boolean" />
+		<column name="changePackaging" type="Boolean" />
+		<column name="changeFormulation" type="Boolean" />
+		
+		<column name="visualDesignComplete" type="Date" />
+		<column name="artworkApproved" type="Date" />
+		<column name="separationFilesToPrinter" type="Date" />
+		<column name="marketDeployment" type="Date" />
+		<column name="shipToTrade" type="Date" />
+		
+		<column name="designAgency" type="long" />
+		<column name="pmaUser" type="long" />
+		<column name="localMarketing" type="long" />
+		<column name="rndLocalDeployUser" type="long" />
+		
+		<column name="projectName" type="String" />
+		<column name="projectCategory" type="String" />
+		<column name="projectType" type="String" />
+		<column name="brand" type="String" />
+		<column name="projectUserId" type="long" />				
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="jobId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="projectId" return-type="Collection">
+			<finder-column name="projectId" />
+		</finder>
+
+	</entity>
+</service-builder>

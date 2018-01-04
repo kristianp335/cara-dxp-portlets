@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.unilever.demo.cara.taskdetails.model.TaskDetails">
+		<field name="uuid" type="String" />
+		<field name="taskDetailsId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="jobId" type="long" />
+		<field name="taskId" type="long" />
+		<field name="fileUrl" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="fileId" type="long" />
+		<field name="productDetails" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="whyUse" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="howToUse" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="howItWorks" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="expertTips" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="approvedBy" type="long" />
+		<field name="approved" type="Boolean" />
+		<field name="comments" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+	</model>
+</model-hints>

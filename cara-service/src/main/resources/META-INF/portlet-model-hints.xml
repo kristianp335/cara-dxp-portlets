@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.unilever.demo.cara.model.project">
+		<field name="uuid" type="String" />
+		<field name="projectId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+		<field name="projectRefId" type="String" />
+		<field name="projectName" type="String" />
+		<field name="projectType" type="String" />
+		<field name="brand" type="String" />
+		<field name="brandPosition" type="String" />
+		<field name="projectCategory" type="String" />
+		<field name="charterGateApproval" type="Date" />
+		<field name="productDesignLock" type="Date" />
+		<field name="contractGateApproval" type="Date" />
+		<field name="marketReadyApproval" type="Date" />
+		<field name="marketDeployment" type="Date" />
+		<field name="shipToTrade" type="Date" />
+		<field name="marketingUserId" type="long" />
+		<field name="rndUserId" type="long" />
+		<field name="rndProductUserId" type="long" />
+		<field name="supplyChainUserId" type="long" />
+		<field name="customerDevelopmentUserId" type="long" />
+		<field name="techLeaderUserId" type="long" />
+	</model>
+</model-hints>

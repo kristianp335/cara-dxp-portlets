@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.unilever.demo.cara.tasks.model.Tasks">
+		<field name="uuid" type="String" />
+		<field name="taskId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="jobId" type="Long" />
+		<field name="taskname" type="String" />
+		<field name="taskStatus" type="long" />
+		<field name="completeDate" type="Date" />
+		<field name="userAssigned" type="long" />
+		<field name="superAssigned" type="long" />
+	</model>
+</model-hints>

@@ -1,0 +1,1 @@
+create index IX_A52C9B82 on cara_Join (projectId);

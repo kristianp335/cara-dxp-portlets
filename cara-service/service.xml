@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.liferay.unilever.demo.cara">
+	<namespace>Cara</namespace>
+	<entity local-service="true" name="project" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="projectId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+		
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		
+		
+		<!-- Status fields -->
+		<column name="status" type="int" />
+		<column name="statusByUserId" type="long" />
+		<column name="statusByUserName" type="String" />
+		<column name="statusDate" type="Date" />
+
+		<!-- Project fields -->
+		<column name="projectRefId" type="String" />
+		<column name="projectName" type="String" />
+		<column name="projectType" type="String" />
+		<column name="brand" type="String" />
+		<column name="brandPosition" type="String" />
+		<column name="projectCategory" type="String" />
+		<column name="charterGateApproval" type="Date" />
+		<column name="productDesignLock" type="Date" />
+		<column name="contractGateApproval" type="Date" />
+		<column name="marketReadyApproval" type="Date" />
+		<column name="marketDeployment" type="Date" />
+		<column name="shipToTrade" type="Date" />
+		
+		<!-- Project Assignment Fields -->
+		
+		<column name="marketingUserId" type="long" />
+		<column name="rndUserId" type="long" />
+		<column name="rndProductUserId" type="long" />
+		<column name="supplyChainUserId" type="long" />		
+		<column name="customerDevelopmentUserId" type="long" />
+		<column name="techLeaderUserId" type="long" />
+		
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="projectRefId" order-by="asc"/>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+		
+		<finder name="Status" return-type="Collection">
+			<finder-column name="status" />
+		</finder>
+		<finder name="G_S" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="status" />
+		</finder>	
+		
+		<finder name="ProjectName" return-type="Collection">
+			<finder-column name="projectName" />			
+		</finder>
+		
+		<finder name="ProjectCategory" return-type="Collection">
+			<finder-column name="projectCategory" />			
+		</finder>		
+		
+		<finder name="ProjectRefId" return-type="Boolean">
+			<finder-column name="projectRefId" />			
+		</finder>	
+		
+		<finder name="ProjectType" return-type="Collection">
+			<finder-column name="projectType" />			
+		</finder>	
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink" />
+	</entity>
+</service-builder>

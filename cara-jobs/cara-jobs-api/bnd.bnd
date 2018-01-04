@@ -1,0 +1,13 @@
+Bundle-Name: cara-jobs-api
+Bundle-SymbolicName: com.liferay.unilever.demo.cara.jobs.api
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.liferay.unilever.demo.cara.jobs.exception,\
+	com.liferay.unilever.demo.cara.jobs.model,\
+	com.liferay.unilever.demo.cara.jobs.service,\
+	com.liferay.unilever.demo.cara.jobs.service.persistence,\
+	cara.jobs.exception,\
+	cara.jobs.model,\
+	cara.jobs.service,\
+	cara.jobs.service.persistence
+-includeresource: META-INF/service.xml=../cara-jobs-service/service.xml

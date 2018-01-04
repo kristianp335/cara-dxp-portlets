@@ -1,0 +1,22 @@
+create table Cara_TaskDetails (
+	uuid_ VARCHAR(75) null,
+	taskDetailsId LONG not null primary key,
+	groupId LONG,
+	companyId LONG,
+	userId LONG,
+	userName VARCHAR(75) null,
+	createDate DATE null,
+	modifiedDate DATE null,
+	jobId LONG,
+	taskId LONG,
+	fileUrl VARCHAR(500) null,
+	fileId LONG,
+	productDetails VARCHAR(1000) null,
+	whyUse VARCHAR(1000) null,
+	howToUse VARCHAR(1000) null,
+	howItWorks VARCHAR(1000) null,
+	expertTips VARCHAR(1000) null,
+	approvedBy LONG,
+	approved BOOLEAN,
+	comments VARCHAR(1000) null
+);

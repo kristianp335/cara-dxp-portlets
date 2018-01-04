@@ -1,0 +1,9 @@
+Bundle-Name: cara-api
+Bundle-SymbolicName: com.liferay.unilever.demo.cara.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.unilever.demo.cara.exception,\
+	com.liferay.unilever.demo.cara.model,\
+	com.liferay.unilever.demo.cara.service,\
+	com.liferay.unilever.demo.cara.service.persistence
+-includeresource: META-INF/service.xml=../cara-service/service.xml

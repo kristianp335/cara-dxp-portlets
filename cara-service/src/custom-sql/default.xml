@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+    <sql id="com.liferay.unilever.cara.service.persistence.groupValues.groupByProjectCategory">
+<![CDATA[
+        select cara_project.* from cara_project group by cara_project.projectCategory
+]]>
+    </sql>
+    
+    <sql id="com.liferay.unilever.cara.service.persistence.groupValues.groupByProjectName">
+<![CDATA[
+        select cara_project.* from cara_project group by cara_project.projectName
+]]>
+    </sql>
+</custom-sql>

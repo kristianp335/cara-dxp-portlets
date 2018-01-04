@@ -1,0 +1,9 @@
+Bundle-Name: cara-taskdetails-api
+Bundle-SymbolicName: com.liferay.unilever.demo.cara.taskdetails.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.unilever.demo.cara.taskdetails.exception,\
+	com.liferay.unilever.demo.cara.taskdetails.model,\
+	com.liferay.unilever.demo.cara.taskdetails.service,\
+	com.liferay.unilever.demo.cara.taskdetails.service.persistence
+-includeresource: META-INF/service.xml=../cara-taskdetails-service/service.xml

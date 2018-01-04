@@ -22,6 +22,7 @@ import com.liferay.portal.kernel.util.ParamUtil;
 			"javax.portlet.name=com_liferay_cara_project",
 			"mvc.command.name=/create/createrender"
 	},
+		
 		service = MVCRenderCommand.class)
 
 public class CreateProjectMVCRenderCommand implements MVCRenderCommand  {
